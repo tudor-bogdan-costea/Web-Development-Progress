@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="MyWebpageFunction.js" type="text/javascript"></script>
+
+  <style>
+  /*nav{
+      opacity: 0.5;
+    }
+    nav:hover{
+      opacity: 1.0;
+    }*/
+    .input-group{
+      padding: 7px 0px 0px 0px;
+    }
+    .navbar-header{
+      padding-right: 20px;
+    }
+    .dropdown-menu{
+	     min-width: 450px;
+    }
+    .multi-column-dropdown {
+	     list-style: none;
+    }
+    .multi-column-dropdown li a:hover {
+	    text-decoration: none;
+	    color: #262626;
+	    background-color: #ecaa59;
+      border-radius: 5px;
+    }
+    .multi-column-dropdown li a {
+	     display: inline-block;
+	      clear: both;
+	      line-height: 1.428571429;
+	      color: #333;
+	      white-space: normal;
+      }
+    @media (max-width: 767px) {
+	     .dropdown-menu.multi-column {
+		      min-width: 240px !important;
+		      overflow-x: hidden;
+	       }
+       }
+#background-image {
+      width: 100%;
+      height:auto;
+      position:fixed;
+      z-index: -100;
+      min-height: 100%;
+      min-width: 1020px;
+      }
+  #myCarousel{
+      background: #f9e6b8;
+      border-radius: 4px;
+      height: 300px;
+      }
+  #myCarousel:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 9px 9px 9px;
+    transition: 0.5s;
+  }
+  .carousel-indicators > li{
+    background-color: black;
+    }
+  .style_featured{
+    padding: 20px 0;
+    text-align: center;
+    }
+  .style_featured > div > div{
+    padding: 10px;
+    border-radius: 4px;
+    background: #f9e6b8;
+    transition: 0.5s;
+    }
+  .style_featured > div:hover > div{
+    margin-top: +19px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 9px 9px 9px;
+    background: #f9e6b8;
+    transition: 0.99s;
+    }
+  </style>
+</head>
+
+<body>
+<img src="gradient-cool-background2.jpg" id="background-image"/>
+<nav class="navbar navbar-inverse">
+  <div class="row">
+    <div class="col-sm-9 inline">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand btn btn-warning" href="#Home"><span class="glyphicon glyphicon-home"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+        		      <li>
+                    <a href="#"><strong>Contact</strong></a>
+                  </li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><strong>Servicii</strong><b class="caret"></b></a>
+                    <ul class="dropdown-menu multi-column">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <ul class="multi-column-dropdown">
+                            <li><a href="#"><h4>PC si Laptopuri</h4></a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Depanari</a></li>
+                            <li><a href="#">Intretinere</a></li>
+                            <li><a href="#">Upgrade</a></li>
+                            <li class="divider"></li>
+                            <li><a href="">Preturi</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-sm-6">
+                          <ul class="multi-column-dropdown">
+                            <li><a href="#"><h4>Telefoane si tablete</h4></a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Depanari</a></li>
+                            <li><a href="#">Intretinere</a></li>
+                            <li><a href="#">Decodari</a></li>
+                            <li class="divider"></li>
+                            <li><a href="">Preturi</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </ul>
+                  </li>
+               	  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><strong>Retelistica</strong><b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                  	    <li>Decodare</li>
+                  	    <li>Depanare</li>
+                  	    <li>Curatare si intretinere</li>
+                    </ul>
+                   </li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><strong>Shop</strong><b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                  	  <li>Decodare</li>
+                  	  <li>Depanare</li>
+                  	  <li>Curatare si intretinere</li>
+                    </ul>
+                  </li>
+              </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3 pull-right">
+                <div class="input-group has-warning" id="search-bar">
+                  <input type="text" class="form-control" placeholder="Search for...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-warning" type="button">Search</button>
+                  </span>
+                </div><!-- /input-group -->
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+<!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+<!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div class="header-text hidden-xs">
+          <div class="col-md-12 text-center">
+            <h3><strong>Servicii si solutii pentru dispozitivele dumneavoastra.</strong></h3>
+              <p>Va oferim servicii si solutii IT la domiciliu sau in atelierul nostru. Efectuam depanare, intretinere si
+                            upgrade pentru computerele de toate categoriile, cat si pentru dispozitivele mobile. De asemeni va oferim servicii
+                            si solutii pt conectivitatea dumneavoastra la Internet. Oferim consultanta pentru orice tip de computer
+                            cat si pentru o eventuala imbunatatire, de asemeni detinem un magazin de computere si dispozitive de telecomunicatii
+                            restaurate de catre noi, cu un raport pret/calitate foarte avantajos.</p>
+              <br>
+              <div class="">
+                <a class="btn btn-info" href="#">Mai Mult</a>
+              </div>
+              <hr>
+          </div>
+        </div><!-- /header-text -->
+      </div>
+      <div class="item">
+        <div class="header-text hidden-xs">
+          <div class="col-md-12 text-center">
+            <h3><strong>Servicii si solutii pentru dispozitivele dumneavoastra.</strong></h3>
+              <p>Va oferim servicii si solutii IT la domiciliu sau in atelierul nostru. Efectuam depanare, intretinere si
+                            upgrade pentru computerele de toate categoriile, cat si pentru dispozitivele mobile. De asemeni va oferim servicii
+                            si solutii pt conectivitatea dumneavoastra la Internet. Oferim consultanta pentru orice tip de computer
+                            cat si pentru o eventuala imbunatatire, de asemeni detinem un magazin de computere si dispozitive de telecomunicatii
+                            restaurate de catre noi, cu un raport pret/calitate foarte avantajos.</p>
+              <br>
+              <div class="">
+                <a class="btn btn-info" href="#">Mai Mult</a>
+              </div>
+              <hr>
+          </div>
+        </div><!-- /header-text -->
+      </div>
+      <div class="item">
+        <div class="header-text hidden-xs">
+          <div class="col-md-12 text-center">
+            <h3><strong>Servicii si solutii pentru dispozitivele dumneavoastra.</strong></h3>
+              <p>Va oferim servicii si solutii IT la domiciliu sau in atelierul nostru. Efectuam depanare, intretinere si
+                            upgrade pentru computerele de toate categoriile, cat si pentru dispozitivele mobile. De asemeni va oferim servicii
+                            si solutii pt conectivitatea dumneavoastra la Internet. Oferim consultanta pentru orice tip de computer
+                            cat si pentru o eventuala imbunatatire, de asemeni detinem un magazin de computere si dispozitive de telecomunicatii
+                            restaurate de catre noi, cu un raport pret/calitate foarte avantajos.</p>
+              <br>
+              <div class="">
+                <a class="btn btn-info" href="#">Mai Mult</a>
+              </div>
+              <hr>
+          </div>
+        </div><!-- /header-text -->
+      </div>
+      <div class="item">
+        <div class="header-text hidden-xs">
+          <div class="col-md-12 text-center">
+            <h3><strong>Servicii si solutii pentru dispozitivele dumneavoastra.</strong></h3>
+              <p>Va oferim servicii si solutii IT la domiciliu sau in atelierul nostru. Efectuam depanare, intretinere si
+                            upgrade pentru computerele de toate categoriile, cat si pentru dispozitivele mobile. De asemeni va oferim servicii
+                            si solutii pt conectivitatea dumneavoastra la Internet. Oferim consultanta pentru orice tip de computer
+                            cat si pentru o eventuala imbunatatire, de asemeni detinem un magazin de computere si dispozitive de telecomunicatii
+                            restaurate de catre noi, cu un raport pret/calitate foarte avantajos.</p>
+              <br>
+              <div class="">
+                <a class="btn btn-info" href="#">Mai Mult</a>
+              </div>
+              <hr>
+          </div>
+        </div><!-- /header-text -->
+      </div>
+    </div>
+  </div>
+  <div class="row style_featured">
+    <div class="col-sm-4">
+      <div>
+        <img src="device-laptop-icon.png" alt="text" class="img-rounded img-thumbnail" />
+                    <h2>Item A</h2>
+                    <p style="text-align: left;">
+                      <span class="fa fa-info-circle"></span>
+                        A quality item for purchase. Features state of the art technology
+                      </p>
+                    <p style="text-align: left;">
+                        <span class="fa fa-bank "></span>
+                        0% Financing available
+                      </p>
+                    <p style="text-align: left;">
+                        <span class="fa fa-calendar "></span>
+                        12 months full warranty
+                      </p>
+                    <a href="#" class="btn btn-success" title="Mai Mult">Mai Mult +</a>
+      </div>
+    </div>
+    <div class="col-sm-4">
+                <div>
+                    <img src="device-computer-icon.png" alt="alt text" class="img-rounded img-thumbnail"/>
+                    <h2>Item A</h2>
+                    <p style="text-align: left;">
+                        <span class="fa fa-info-circle"></span>
+                        A quality item for purchase. Features state of the art technology
+                    </p>
+                    <p style="text-align: left;">
+                        <span class="fa fa-bank "></span>
+                        0% Financing available
+                    </p>
+                    <p style="text-align: left;">
+                        <span class="fa fa-calendar "></span>
+                        21 months full warranty
+                    </p>
+                    <a href="#" class="btn btn-success" title="Mai Mult">Mai Mult +</a>
+                </div>
+    </div>
+    <div class="col-sm-4">
+                <div>
+                    <img src="device-tablet-icon.png" alt="mai mult text" class="img-rounded img-thumbnail"/>
+                    <h2>Item A</h2>
+                    <p style="text-align: left;">
+                        <span class="fa fa-info-circle"></span>
+                        A quality item for purchase. Features state of the art technology
+                    </p>
+                    <p style="text-align: left;">
+                        <span class="fa fa-bank "></span>
+                        0% Financing available
+                    </p>
+                    <p style="text-align: left;">
+                        <span class="fa fa-calendar "></span>
+                        4 months full warranty
+                    </p>
+                    <a href="#" class="btn btn-success" title="Mai Mult">Mai Mult +</a>
+                </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
